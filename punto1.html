@@ -1,0 +1,44 @@
+<head>
+    <!-- Metadato que especifica el autor de la página -->
+    <meta name="author" content="Raúl Caro Pastorino" />
+  </head>
+  
+  <script>
+    // Funcion con nombre viajarConSuerte que no contiene argumentos
+    function viajarConSuerte() {
+      // Genera un número aleatorio entre 0 y 10
+      var x = Math.random() * 10;
+      // Variable con nombre URL
+      var URL;
+      
+      // Si el número aleatorio es menor o igual a 3 ejecuta las acciones designadas
+      if (x <= 3) {
+        x = 0; // El numero aleatorio pasa a ser un 0
+        URL = 'https://www.hotmail.com'; // Asigna a la variable URL el link de la pagina de Hotmail
+      }
+      // Si el número es mayor que 3 pero menor o igual a 6 ejecuta las acciones designadas
+      else if (x <= 6) {
+        x = 1; // Asigna 1 a la variable x
+        URL = 'https://www.gmail.com'; // Asigna a la variable URL el link de la pagina de Gmail
+      }
+      // Si el número es mayor que 6 ejecuta las acciones designadas
+      else {
+        x = 2; // Asigna 2 a la variable x
+        URL = 'https://www.yahoo.com'; // Asigna a la variable URL el link de la pagina de Yahoo
+      }
+      
+      // Redirige a la URL seleccionada aleatoriamente
+      location.assign(URL);
+    }
+  </script>
+  
+  <body>
+    <!--Título de la página-->
+    <h1 id="titulo1">URL Aleatoria</h1>
+    
+    <div>
+      <!-- Enlace que llama a la función viajarConSuerte al hacer clic -->
+      <a href="javascript:viajarConSuerte();" title="Viajando con suerte">Pulsa aquí para probar suerte</a>
+    </div>
+  </body>
+  

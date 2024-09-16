@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Declara el tipo de documento y el idioma principal de la página -->
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres para soportar caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Asegura que la página sea responsive en dispositivos móviles -->
+    <title>Pase de Imágenes Automático</title> <!-- Título de la página en la pestaña del navegador -->
+    
+    <!-- Enlace a una hoja de estilos -->
+    <link rel="stylesheet" href="./CSS/Style1.css">
+</head>
+<body onload="iniciar();"> <!-- Ejecuta la función 'iniciar()' automáticamente cuando la página se carga -->
+
+    <!-- Encabezado de la página -->
+    <h1 id="titulo1">Pase de Imágenes Automático</h1>
+
+    <!-- Contenedor para la imagen que rota automáticamente -->
+    <div id="cajaSlide">
+        <!-- Imagen que cambiará automáticamente cada cierto tiempo. Al hacer clic en ella -->
+        <img id="imgSlide" src="./images/img1.jpg" title="Imagen" alt="Imagen" onclick="rotarImagenes();" />
+        <br /><br />
+
+        <!-- Formulario con botones para parar y continuar la rotación de imágenes -->
+        <form>
+            <!-- Botón para detener la rotación automática, que llama a la función -->
+            <input type="button" value="Parar" onclick="detener();" />
+            <!-- Botón para continuar la rotación automática, que llama a la función -->
+            <input type="button" value="Continuar" onclick="iniciar();" />
+        </form>
+    </div>
+
+    <!-- Enlace al archivo JavaScript externo que contiene las funciones para la rotación de imágenes -->
+    <script src="./js/Script1.js"></script>
+</body>
+</html>

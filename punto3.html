@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Define el conjunto de caracteres de la página como UTF-8 para admitir caracteres especiales -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Hace que el diseño sea responsive, adaptándose al tamaño de la pantalla del dispositivo -->
+        <title>Adivina el Número</title>
+        <!-- Título de la página que se muestra en la pestaña del navegador -->
+        <link rel="stylesheet" href="./CSS/style.css">
+    </head>
+    <body>
+        <!-- Encabezado principal del juego -->
+        <h1>Adivina el Número</h1>
+
+        <!-- Instrucción para el usuario sobre el juego -->
+        <p>Intenta adivinar un número entre 1 y 100.</p>
+
+        <!-- Campo de entrada para que el usuario escriba su número -->
+        <input type="number" id="numero" placeholder="Escribe tu número" />
+
+        <!-- Botón que ejecuta la función 'adivinar' cuando el usuario hace clic en él -->
+        <button onclick="adivinar()">Adivinar</button>
+
+        <!-- Párrafo donde se mostrará el resultado del intento del usuario -->
+        <p id="resultado">X</p>
+
+        <!-- Enlace al archivo de JavaScript que contiene la funcionalidad del juego -->
+        <script src="./js/Script3.js"></script>
+    </body>
+</html>
